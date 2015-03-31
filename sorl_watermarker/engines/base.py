@@ -136,7 +136,7 @@ class WatermarkEngineBase(ThumbnailEngineBase):
         # if the values are not a pair of numbers
         except ValueError:
             if pos_list == ['center']:
-                position = (coords['x']['east']/2, coords['y']['south']/2)
+                position = (int(coords['x']['east']/2), int(coords['y']['south']/2))
             else:
                 x_val = [lon for lon in pos_list if lon in coords['x']]
                 y_val = [lat for lat in pos_list if lat in coords['y']]
