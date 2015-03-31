@@ -1,4 +1,19 @@
-# sorl-watermark
+# sorl-watermark-python3
+
+## Fork notes
+
+This [fork](https://github.com/rdolgushin/sorl-watermark) is able to
+runs with Python 3.3 using `sorl_watermarker.engines.pil_engine.Engine`
+unlike to original [sorl-watermark](https://github.com/originell/sorl-watermark)
+and it is possible (but not well tested yet) to run it with Python 2.6+ too.
+
+**Installation**
+
+```bash
+$ pip install git+https://github.com/rdolgushin/sorl-watermark-python3
+```
+
+## Intro
 
 As of 12th July 2013, *vbazhin* will be taking over development and take care of implementing all the
 mentioned features. Everybody welcome him with a warm applause :D!

@@ -77,7 +77,7 @@ class WatermarkEngineBase(ThumbnailEngineBase):
                 options['watermark_size'] = parse_geometry(
                                             mark_sizes,
                                             self.get_image_ratio(image, options))
-            except TypeError, e:
+            except TypeError as e:
                 raise TypeError('Please, update sorl-thumbnail package version to  >= 11.12b. %s' % e)
         else:
             options['watermark_size'] = False
